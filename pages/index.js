@@ -1,11 +1,13 @@
 import { Container, Box, Heading, Image, useColorModeValue, Link, Button } from '@chakra-ui/react'
 import { ChevronRightIcon, StarIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
+import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 const Page = () => {
     return (
+      <Layout>
         <Container>
             <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500','whiteAlpha.200')} p={3} mb={6} aling="center">
                 Hello, I&apos;m a full-stack devoloper based in Chile
@@ -75,6 +77,7 @@ const Page = () => {
           </Paragraph>
         </Section>
         </Container>
+    </Layout>
     )
 }
 
